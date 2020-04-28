@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <link rel="icon" href="./images/logo.ico" type="image/png"/>
+  <title>Invoice</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="myinvoice.css">
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+  <body>
+<!--
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" >
+              <a class="nav-link" style="width: 130px;height:28px;padding-left:5px;" href="#"><img src="./images/nameonly.png" style="width:130px;height:28px;padding-left:10px;"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Courses
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Course 1</a>
+                  <a class="dropdown-item" href="#">Course 2</a>
+                  <a class="dropdown-item" href="#">Course 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Study Material
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Material 1</a>
+                  <a class="dropdown-item" href="#">Material 2</a>
+                  <a class="dropdown-item" href="#">Material 3</a>
+                  
+                  
+                  
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Our Blog</a>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <a class="dropdown-item" href="#">FAQs</a>
+                </div>
+              </li>
+          </ul>
+          <div class="dropdown" style="padding-right: 30px;">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">My Dashboard</a>
+              <a class="dropdown-item" href="#">My Account</a>
+              <a class="dropdown-item" href="#">Ongoing Classes</a>
+              <a class="dropdown-item" href="#">My Invoice</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+          
+          <div class="social-part">
+            <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>   -->
+
+<!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav1">
+    <a class="navbar-brand" href="#" id="brand_name">
+    <img src="logo.ico" class="d-inline-block mr-1" id="brand_image"><span id="bname">Learn From Home</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link px-3" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Course 1</a>
+          <a class="dropdown-item" href="#">Course 2</a>
+          <a class="dropdown-item" href="#">Course 3</a>
+                     
+            </div>
+      </li>
+
+      <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Study Material
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Material 1</a>
+          <a class="dropdown-item" href="#">Material 2</a>
+          <a class="dropdown-item" href="#">Material 3</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Our Blog</a>
+          <a class="dropdown-item" href="#">Contact</a>
+          <a class="dropdown-item" href="#">FAQs</a>
+        </div>
+      </li>
+      </ul>
+
+
+      <div class="dropdown" style="padding-right: 30px;">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">My Dashboard</a>
+              <a class="dropdown-item" href="#">My Account</a>
+              <a class="dropdown-item" href="#">Ongoing Classes</a>
+              <a class="dropdown-item" href="#">My Invoice</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+          
+          <div class="social-part">
+            <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+          </div>
+       
+      
+  </div>
+</nav>
+<!--END OF NAVBAR-->
+      
+        <div class="invoice overflow-auto">
+            <div style="min-width: 600px">
+                <header>
+                    <div class="row">
+                        <div class="col" >
+                            <img src="./images/logo.png" style="width:70px;height:80px;margin-left:320px;">
+                            <img src="./images/name.png" style="width:190px;height:40px;margin-left:2px;">
+                        </div>
+                        </header>
+                <main>
+                    <div class="row contacts">
+                        <div class="col invoice-to">
+                            <div class="text-gray-light">INVOICE TO:</div>
+                            <h2 class="to">Username</h2>
+                            <div class="address">Residential Address</div>
+                            <div class="email"><a href="mailto:username@example.com">username@example.com</a></div>
+                        </div>
+                        <div class="col invoice-details" style="margin-top: 30px;">
+                            <h2 class="to">Invoice ID: #LFH4589</h2>
+                            <div class="date">Date of Invoice: 01/05/2020</div>
+                            <div class="date">Due Date: 15/05/2020</div>
+                        </div>
+                        </div>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th class="text-left">DESCRIPTION</th>
+                                <th class="text-right">PRICE</th>
+                                <th class="text-right">TAX</th>
+                                <th class="text-right">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="no">01</td>
+                                <td class="text-left"><h3> Course 1</h3>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, asperiores reiciendis quo vero odio aut.
+                                </td>
+                                <td class="unit">₹ 1000</td>
+                                <td class="qty">10%</td>
+                                <td class="total">₹ 1100</td>
+                            </tr>
+                            <tr>
+                                <td class="no">02</td>
+                                <td class="text-left"><h3>Course 2</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, magnam dolore impedit placeat nemo porro temporibus facilis.</td>
+                                <td class="unit">₹ 800</td>
+                                <td class="qty">10%</td>
+                                <td class="total">₹ 880</td>
+                            </tr>
+                            <tr>
+                                <td class="no">03</td>
+                                <td class="text-left"><h3>Course 3</h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat temporibus blanditiis molestias sit ipsam ratione dicta.</td>
+                                <td class="unit">₹ 1500</td>
+                                <td class="qty">10%</td>
+                                <td class="total">₹ 1650</td>
+                            </tr>
+                            <tr>
+                                <td class="no">04</td>
+                                <td class="text-left"><h3>Course 4</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati, exercitationem praesentium.</td>
+                                <td class="unit">₹ 1000</td>
+                                <td class="qty">10%</td>
+                                <td class="total">₹ 1100</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            
+                            <tr>
+                                <td colspan="2"></td>
+                                <td colspan="2">GRAND TOTAL</td>
+                                <td>₹ 4730</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                   
+                </main>
+                <footer>
+                    <div class="text-right">
+                        <button id="printInvoice" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
+                        <button class="btn btn-info"><i class="fa fa-file-pdf-o"></i> Export as PDF</button>
+                    </div>
+                </footer>
+            </div>
+            <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+            <div></div>
+        </div>
+    </div>
+    <script>
+        $('#printInvoice').click(function(){
+            Popup($('.invoice')[0].outerHTML);
+            function Popup(data) 
+            {
+                window.print();
+                return true;
+            }
+        });
+    </script>
+    </body>
+    </html>

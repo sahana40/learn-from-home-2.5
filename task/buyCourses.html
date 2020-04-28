@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+  <link rel="icon" href="./images/logo.ico" type="image/png"/>
+  <title>Course Selection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="buyCourses.css">
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="array.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+  <body>
+
+  <!--  <nav class="navbar navbar-expand-sm   navbar-dark bg-dark fixed-nav-bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" >
+              <a class="nav-link" style="width: 130px;height:28px;padding-left:5px;" href="#"><img src="./images/nameonly.png" style="width:130px;height:28px;padding-left:10px;"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Courses
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Course 1</a>
+                  <a class="dropdown-item" href="#">Course 2</a>
+                  <a class="dropdown-item" href="#">Course 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Study Material
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Material 1</a>
+                  <a class="dropdown-item" href="#">Material 2</a>
+                  <a class="dropdown-item" href="#">Material 3</a>
+                  
+                  
+                  
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Our Blog</a>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <a class="dropdown-item" href="#">FAQs</a>
+                </div>
+              </li>
+          </ul>
+          <div class="social-part">
+            <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav> -->
+
+<!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav1">
+    <a class="navbar-brand" href="#" id="brand_name">
+    <img src="logo.ico" class="d-inline-block mr-1" id="brand_image"><span id="bname">Learn From Home</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link px-3" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Course 1</a>
+          <a class="dropdown-item" href="#">Course 2</a>
+          <a class="dropdown-item" href="#">Course 3</a>
+                     
+            </div>
+      </li>
+
+      <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Study Material
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Material 1</a>
+          <a class="dropdown-item" href="#">Material 2</a>
+          <a class="dropdown-item" href="#">Material 3</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Our Blog</a>
+          <a class="dropdown-item" href="#">Contact</a>
+          <a class="dropdown-item" href="#">FAQs</a>
+        </div>
+      </li>
+      </ul>
+
+
+      <div class="dropdown" style="padding-right: 30px;">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">My Dashboard</a>
+              <a class="dropdown-item" href="#">My Account</a>
+              <a class="dropdown-item" href="#">Ongoing Classes</a>
+              <a class="dropdown-item" href="#">My Invoice</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+          
+          <div class="social-part">
+            <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+          </div>
+       
+      
+  </div>
+</nav>
+<!--END OF NAVBAR-->
+<div class="classes">
+  <p style="border-bottom: 1px solid #e0e0e0;padding-bottom: 10px;"><img src="./images/logo.png" style="width:70px;height:70px;margin-left:300px;">
+    <img src="./images/name.png" style="width:190px;height:40px;padding-left:2px;"></p>
+<p style="color:purple;font-size: 1.3rem;">Select your class, subject, and number of hours from the list</p>
+<div class="row" style="padding-top:6px">
+  <div class="col-md-4">
+    <form autocomplete="off" action="/action_page.php">
+      <div class="autocomplete" style="width:300px;">
+        <input id="myInput1" type="text" name="myClass" placeholder="Class">
+      </div>
+
+    </form>
+  </div>
+  <div class="col-md-4">
+    <form autocomplete="off" action="/action_page.php">
+      <div class="autocomplete" style="width:300px;">
+        <input id="myInput2" type="text" name="mySubject" placeholder="Subject">
+      </div>
+
+    </form>
+
+  </div>
+  <div class="col-md-4">
+    <form autocomplete="off" action="/action_page.php">
+      <div class="autocomplete" style="width:300px;">
+        <input id="myInput3" type="number" name="myHours" placeholder="Hours">
+      </div>
+
+    </form>
+    
+        
+      
+
+  </div>
+
+</div>
+<!-- <div class="container py-5">
+  <header class="text-center">
+      <h1 class="display-4 font-weight-bold">Bootstrap Datepicker</h1>
+      <p class="font-italic text-muted mb-0">Create a nicely styled reservation form using Bootstrap 4 and <a href="https://github.com/uxsolutions/bootstrap-datepicker" class="text-muted">Bootstrap datepicker</a>.</p>
+      <p class="font-italic text-muted">Snippet By <a href="https://bootstrapious.com" class="text-muted">
+          <u>Bootstrapious</u></a>
+      </p>
+  </header>
+</div> -->
+<p  style="padding-top:6px;color:purple;font-size: 1.3rem;">Click on one of the buttons below according to number of classes per month.</p>
+<div class ="row"  style="padding-top:6px;">
+  <div class="col-md-4"><button style="background-color:#d4af37; border-radius: 50px;
+    width:200px;border:none;color: white;text-transform: uppercase;" class="btn btn-lg">Gold</button></div>
+  <div class="col-md-4"><button style="background-color:#aaa9ad; border-radius: 50px;
+    width:200px;border:none;color: white;text-transform: uppercase;" class="btn btn-lg">Silver</button></div>
+<div class="col-md-4"><button style="background-color:#b08d57; border-radius: 50px;
+  width:200px;border:none;color: white;text-transform: uppercase;" class="btn btn-lg">Bronze</button></div>
+</div>
+<div class="or-seperator" style="font-family: 'Raleway', sans-serif;"></div>
+<div class="form-row"  style="padding-top:12px;">
+  <div class="form-group col-sm-6" style="border-right:1px solid #e0e0e0">
+    
+    <label  style="padding-top:12px;color:purple;font-size: 1.3rem;margin-bottom: 15px;">Select date to start classes</label>
+    
+       </script>
+      <input type="date" class="form-control" id="inputDob" placeholder="Date of birth" name="inputDob">
+      <button type="submit" id="goto" class="btn btn-success btn-lg btn-block signup-btn" style="font-family: 'Montserrat', sans-serif;margin-top:30px"><i class="fa fa-check-circle" style="padding-right:3px;"></i>Want to add more classes?</button>
+    </div>
+ <div class="form-group col-sm-6">
+   <p style="color:purple;font-size: 1.3rem;padding-bottom: 10px;margin-left:120px">Selected Courses</p>
+  <table border="0" cellspacing="0" cellpadding="0" style="margin-top: 15px;margin-left: 20px;">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td class="text-left">COURSE</th>
+            <td class="text-right">PRICE</th>
+            <td class="text-right">TAX</th>
+            <td class="text-right">TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="no">01</td>
+            <td class="text-left"><h3> Course 1</h3>
+            </td>
+            <td class="unit">₹ 1000</td>
+            <td class="qty">10%</td>
+            <td class="total">₹ 1100</td>
+        </tr>
+        <tr>
+            <td class="no">02</td>
+            <td class="text-left"><h3>Course 2</h3></td>
+            <td class="unit">₹ 800</td>
+            <td class="qty">10%</td>
+            <td class="total">₹ 880</td>
+        </tr>
+        <tfoot>
+                            
+          <tr>
+              <td colspan="2"></td>
+              <td colspan="2">GRAND TOTAL</td>
+              <td>₹ 4730</td>
+          </tr>
+          <tr>
+            
+            <td colspan="5"><button type="submit" id="checkout" class="btn btn-success btn-lg btn-block signup-btn" style="font-family: 'Montserrat', sans-serif;">Checkout</button></td>
+            
+        </tr>
+      </tfoot>
+    </tbody>
+    </table>
+ </div>  
+ </div>
+</div>
+<footer class="container mt-5">
+  <a href="#top" class="to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
+  <p>&copy; 2020 Learn From Home &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+     
+    <script>
+      autocomplete(document.getElementById("myInput1"), classes);
+      autocomplete(document.getElementById("myInput2"), subjects);
+      autocomplete(document.getElementById("myInput3"), hours);
+      var clicked = false;
+      $('#goto').on('click', function(){
+          clicked = true;
+          $(".fa-check-circle").css("color","green");
+          //set window location to same page with previously selected classes displayed
+          });
+         
+    </script>
+
+
+   
+
+</body>
+</html>

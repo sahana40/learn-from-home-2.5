@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+  <link rel="icon" href="./images/logo.ico" type="image/png"/>
+  <title>Learn From Home</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="myAd.css">
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="array.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://raw.githubusercontent.com/savanihd/multi-select-autocomplete/master/autocomplete.multiselect.js"></script>
+
+</head>
+  <body>
+
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-nav-bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" >
+              <a class="nav-link" style="width: 130px;height:28px;padding-left:5px;" href="#"><img src="./images/nameonly.png" style="width:130px;height:28px;padding-left:10px;"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Courses
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Course 1</a>
+                  <a class="dropdown-item" href="#">Course 2</a>
+                  <a class="dropdown-item" href="#">Course 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Study Material
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Material 1</a>
+                  <a class="dropdown-item" href="#">Material 2</a>
+                  <a class="dropdown-item" href="#">Material 3</a>
+                  
+                  
+                  
+                </div>
+              </li>
+              <li class="nav-item dropdown dmenu" style="padding-right: 30px">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbardrop">
+                  <a class="dropdown-item" href="#">Our Blog</a>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <a class="dropdown-item" href="#">FAQs</a>
+                </div>
+              </li>
+          </ul>
+          <div class="dropdown" style="padding-right: 30px;">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">My Dashboard</a>
+              <a class="dropdown-item" href="#">My Account</a>
+              <a class="dropdown-item" href="#">Ongoing Classes</a>
+              <a class="dropdown-item" href="#">My Invoice</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+          
+          <div class="social-part">
+            <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav1">
+        <a class="navbar-brand" href="#" id="brand_name">
+        <img src="logo.ico" class="d-inline-block mr-1" id="brand_image"><span id="bname">Learn From Home</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link px-3" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown ml-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Course 1</a>
+              <a class="dropdown-item" href="#">Course 2</a>
+              <a class="dropdown-item" href="#">Course 3</a>
+                         
+                </div>
+          </li>
+    
+          <li class="nav-item dropdown ml-auto">
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Study Material
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Material 1</a>
+              <a class="dropdown-item" href="#">Material 2</a>
+              <a class="dropdown-item" href="#">Material 3</a>
+            </div>
+          </li>
+    
+          <li class="nav-item dropdown ml-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Our Blog</a>
+              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="#">FAQs</a>
+            </div>
+          </li>
+          </ul>
+    
+    
+          <div class="dropdown" style="padding-right: 30px;">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">My Dashboard</a>
+                  <a class="dropdown-item" href="#">My Account</a>
+                  <a class="dropdown-item" href="#">Ongoing Classes</a>
+                  <a class="dropdown-item" href="#">My Invoice</a>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </div>
+              
+              <div class="social-part">
+                <i class="fa fa-facebook fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-2x" style="color:white;padding-right: 20px;" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" style="color:white" aria-hidden="true"></i>
+              </div>
+           
+          
+      </div>
+    </nav>
+      <div class="classes">
+        <div class="col-sm-12" style="padding-top: 10px;padding-bottom:10px;border-bottom:1px solid #e0e0e0" ><h2 style="color:violet"><img src="./images/logo.png" style="width:70px;height:70px;margin-left:20px;">Your Ad</h2></div>
+        <h4 style="margin-top: 20px;"><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>Which subject do you want to teach?</h4>
+        <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:500px;">
+              <input id="myInput" type="text" name="mySubject" placeholder="Subject">
+            </div>
+      
+          </form>
+          
+        <h4><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>Do you speak any regional language? (Optional)</h4>
+        <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:500px;">
+              <input id="myInput1" type="text" name="myLanguage" placeholder="Regional Language">
+            </div>
+      
+          </form>
+          <h4><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>What type of class do you prefer?</h4>
+          
+          <div class="row">
+            <div class="form-group col-sm-6">
+                <div class="container">
+                  <input type="checkbox" id="individual" name="classtype">
+                  <label for="individual">
+                    <i class="fa fa-user classTypeIcon" aria-hidden="true"></i>
+                    <span>Individual</span>
+                  </label>
+                  <br>
+                </div>
+            </div>
+          <div class="form-group col-sm-6">
+              <div class="container">
+                <input type="checkbox" id="group" name="classtype">
+                <label for="group">
+                  <i class="fa fa-users classTypeIcon" aria-hidden="true"></i>
+                  <span>Group</span>
+                </label>
+                <br>
+              </div>
+          </div>
+          </div>
+        <div class="form-group">
+            <h4><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>Write a unique title for your ad.</h4>
+            <input type="text" class="form-control input-lg" name="title" placeholder="E.g.: Student in engineering school gives tuitions in maths & physics from high school to college in Delhi"  required="required">
+        </div>
+        <div class="form-group">
+            <h4><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>Write your CV here in chronological order.</h4>
+            <textarea id="cv" rows="8" cols="90" style="background-color: #eee;border:none">
+           
+              </textarea>
+        </div>
+        <h4><i class="fa fa-check-circle fa-1x" style="color: skyblue;padding-right: 8px;"></i>Add your YouTube video.</h4>
+        <div class="form-group row">
+                
+          <div class="col-sm-12">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">http://</span>
+                  </div>
+          <input type="text" id="link" name="InputLink" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="gotopicture" class="btn btn-success btn-lg btn-block signup-btn" style="font-family: 'Montserrat', sans-serif;margin-left:300px;margin-top: 15px;">Submit</button>
+      </div>
+        </div>
+</div>
+          
+      <script>
+        
+
+        
+autocomplete(document.getElementById("myInput"), subjects);
+autocomplete(document.getElementById("myInput1"), languages);
+var c=0;
+      $('#individual').on('click', function(){
+          c++;
+          if(c%2!=0)
+          $("#one").css("background-color","#ffccff");
+          else
+          $("#one").css("background-color","#eee");
+      });
+          var c1=0;
+      $('#group').on('click', function(){
+          c1++;
+          if(c1%2!=0)
+          $("#many").css("background-color","#ffccff");
+          else
+          $("#many").css("background-color","#eee");
+
+          //set window.location.href to route that renders the file setupAccount.html
+          });
+       
+
+     
+
+    </script>
+     <footer class="container mt-5">
+      <a href="#top" class="to-top"><i class="fa fa-chevron-up"></i></a>
+      <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
+      <p>&copy; 2020 Learn From Home &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+      </body>
+     
+      </html>
